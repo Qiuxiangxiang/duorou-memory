@@ -1,0 +1,23 @@
+{
+  "count": 31,
+  "metrics": {
+    "recall@1": 0.14170611172508707,
+    "recall@5": 0.5491219564748976,
+    "recall@10": 0.8075668480791822,
+    "recall@gt": 0.6077972628257259,
+    "hit@1": 0.6774193548387096
+  },
+  "gt_stats": {
+    "count_with_gt": 31,
+    "count_empty_gt": 0,
+    "gt_count_avg": 6.258064516129032,
+    "gt_count_min": 2,
+    "gt_count_max": 17
+  },
+  "source_details": "evidence/retrieval_recall_details.json",
+  "k_values": [
+    1,
+    5,
+    10
+  ]
+}

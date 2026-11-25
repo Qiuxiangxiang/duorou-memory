@@ -1,0 +1,226 @@
+{
+  "bm25_enriched": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.6202934400474651,
+      "all_hit": 0.5684348395546824,
+      "mean_sessions": 12.043876882776686
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.71171875,
+      "all_hit": 0.678125,
+      "mean_sessions": 12.48125
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.3419555769192253,
+      "all_hit": 0.24719101123595505,
+      "mean_sessions": 12.01123595505618
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.3351464146522836,
+      "all_hit": 0.1474820143884892,
+      "mean_sessions": 12.37410071942446
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.7093253968253969,
+      "all_hit": 0.7,
+      "mean_sessions": 11.771428571428572
+    }
+  },
+  "fts_enriched": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.637687352425776,
+      "all_hit": 0.5795677799607073,
+      "mean_sessions": 12.227897838899803
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.7236979166666667,
+      "all_hit": 0.6875,
+      "mean_sessions": 12.35625
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.3292325101644335,
+      "all_hit": 0.23595505617977527,
+      "mean_sessions": 13.01123595505618
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.34303438998630215,
+      "all_hit": 0.13309352517985612,
+      "mean_sessions": 12.823741007194245
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.7351190476190477,
+      "all_hit": 0.7226190476190476,
+      "mean_sessions": 11.898809523809524
+    }
+  },
+  "fts_enriched_neighbors": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.6933090131822546,
+      "all_hit": 0.6385068762278978,
+      "mean_sessions": 8.297314996725605
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.71328125,
+      "all_hit": 0.690625,
+      "mean_sessions": 8.346875
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.3365278695747962,
+      "all_hit": 0.25842696629213485,
+      "mean_sessions": 8.584269662921349
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.3386638467763042,
+      "all_hit": 0.11510791366906475,
+      "mean_sessions": 8.377697841726619
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.8408730158730159,
+      "all_hit": 0.8321428571428572,
+      "mean_sessions": 8.221428571428572
+    }
+  },
+  "rrf_direct": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.6355033222976803,
+      "all_hit": 0.5828421741977734,
+      "mean_sessions": 12.161100196463654
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.7309895833333333,
+      "all_hit": 0.7,
+      "mean_sessions": 12.525
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.33138056039576197,
+      "all_hit": 0.24719101123595505,
+      "mean_sessions": 12.719101123595506
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.3381440165707489,
+      "all_hit": 0.1474820143884892,
+      "mean_sessions": 12.575539568345324
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.7297619047619047,
+      "all_hit": 0.7178571428571429,
+      "mean_sessions": 11.826190476190476
+    }
+  },
+  "rrf_all": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.6733666929242543,
+      "all_hit": 0.6182056319580878,
+      "mean_sessions": 11.479371316306484
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.74296875,
+      "all_hit": 0.715625,
+      "mean_sessions": 11.85
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.3269743035109856,
+      "all_hit": 0.24719101123595505,
+      "mean_sessions": 12.02247191011236
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.35388570893114624,
+      "all_hit": 0.14028776978417265,
+      "mean_sessions": 11.856115107913668
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.7892857142857143,
+      "all_hit": 0.7785714285714286,
+      "mean_sessions": 11.155952380952382
+    }
+  },
+  "rrf_diverse": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.6414522637603164,
+      "all_hit": 0.5867714472822528,
+      "mean_sessions": 13.450556647020301
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.7169270833333333,
+      "all_hit": 0.684375,
+      "mean_sessions": 13.73125
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.3157383484548058,
+      "all_hit": 0.23595505617977527,
+      "mean_sessions": 14.258426966292134
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.3416554931038081,
+      "all_hit": 0.14028776978417265,
+      "mean_sessions": 14.075539568345324
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.7464285714285714,
+      "all_hit": 0.7345238095238096,
+      "mean_sessions": 13.051190476190476
+    }
+  },
+  "candidate_union_upper_bound": {
+    "overall": {
+      "n": 1527,
+      "recall": 0.7502094411909688,
+      "all_hit": 0.6895874263261297,
+      "mean_sessions": 15.430255402750491
+    },
+    "temporal": {
+      "n": 320,
+      "recall": 0.79765625,
+      "all_hit": 0.76875,
+      "mean_sessions": 15.7
+    },
+    "open_domain": {
+      "n": 89,
+      "recall": 0.4122904524424683,
+      "all_hit": 0.3146067415730337,
+      "mean_sessions": 16.53932584269663
+    },
+    "multi_hop": {
+      "n": 278,
+      "recall": 0.4405010782897947,
+      "all_hit": 0.19784172661870503,
+      "mean_sessions": 16.16187050359712
+    },
+    "single_hop": {
+      "n": 840,
+      "recall": 0.870436507936508,
+      "all_hit": 0.861904761904762,
+      "mean_sessions": 14.967857142857143
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "n": 31,
+  "models": {
+    "reader": "gpt-6.1-terra",
+    "judge": "gpt-6.2-sol"
+  },
+  "data_sha256": {
+    "emails.json": "5c82c38e7f18923a9eba3af321663a8a5bd70e94e0d5e59e987141c71219a8af",
+    "image_batch_results.json": "7204e8b4ab1a0fea97f2003058213742d47589e09636941f8d83b2e77c33e0a1",
+    "video_batch_results.json": "88ed14ce32afde1a4d54d5b77a0e7f84305b543186307be6c9bc34119342727a",
+    "atm-bench.json": "ab6eaa9df62fb4162e0f5eecd98768a7e3ae721e32d2db2cf227ff41e3295762",
+    "atm-bench-hard.json": "acd35f2a172a9741d970d2cf21184ff0af8d79a8bf59967fc8aa33d619f6af4a"
+  },
+  "budget_bytes": 32768,
+  "metrics": {
+    "previous": {
+      "qs": 0.5793823981205386,
+      "qs_by_qtype": {
+        "number": {
+          "count": 6,
+          "correct": 1.0,
+          "accuracy": 0.16666666666666666
+        },
+        "list_recall": {
+          "count": 12,
+          "correct": 7.960854341736694,
+          "accuracy": 0.6634045284780579
+        },
+        "open_end": {
+          "count": 13,
+          "correct": 9.0,
+          "accuracy": 0.6923076923076923
+        }
+      },
+      "recall_at_10": 0.7704700738856337,
+      "reader_usage": {
+        "input_tokens": 225576,
+        "cached_input_tokens": 123648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2194,
+        "reasoning_output_tokens": 46,
+        "total_tokens": 227770
+      },
+      "judge_usage": {
+        "input_tokens": 31744,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 461,
+        "reasoning_output_tokens": 23,
+        "total_tokens": 32205
+      }
+    },
+    "combined_arrival": {
+      "qs": 0.5793823981205386,
+      "qs_by_qtype": {
+        "number": {
+          "count": 6,
+          "correct": 1.0,
+          "accuracy": 0.16666666666666666
+        },
+        "list_recall": {
+          "count": 12,
+          "correct": 7.960854341736694,
+          "accuracy": 0.6634045284780579
+        },
+        "open_end": {
+          "count": 13,
+          "correct": 9.0,
+          "accuracy": 0.6923076923076923
+        }
+      },
+      "recall_at_10": 0.8075668480791822,
+      "reader_usage": {
+        "input_tokens": 225322,
+        "cached_input_tokens": 123648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2164,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 227486
+      },
+      "judge_usage": {
+        "input_tokens": 31760,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 406,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 32166
+      }
+    }
+  }
+}

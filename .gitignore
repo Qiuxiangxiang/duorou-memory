@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+*.db
+*.db-shm
+*.db-wal
+**/api_keys/
+benchmarks/atm-hard/data/
+benchmarks/atm-hard/upstream/
+benchmarks/atm-hard/rerun/
+benchmarks/atm-hard/official-qa/

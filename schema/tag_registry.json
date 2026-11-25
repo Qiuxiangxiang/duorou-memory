@@ -1,0 +1,77 @@
+{
+  "registry_version": "0.2",
+  "description": "The three active definitions exactly match the public-data importer. Extensions are design proposals and are not seeded or extracted by the demo.",
+  "definitions": [
+    {
+      "namespace": "source",
+      "tag_key": "kind",
+      "value_type": "enum",
+      "allowed_values": ["dialogue_turn"],
+      "description": "Observed source record type",
+      "target_kinds": ["source"],
+      "origin_in_demo": "metadata"
+    },
+    {
+      "namespace": "event",
+      "tag_key": "boundary_kind",
+      "value_type": "enum",
+      "allowed_values": ["source_session"],
+      "description": "Structural session boundary, not semantic event detection",
+      "target_kinds": ["event"],
+      "origin_in_demo": "metadata"
+    },
+    {
+      "namespace": "chronology",
+      "tag_key": "session_ordinal",
+      "value_type": "number",
+      "allowed_values": null,
+      "description": "Order of sessions within the source conversation",
+      "target_kinds": ["event"],
+      "application_constraint": "positive integer",
+      "origin_in_demo": "metadata"
+    }
+  ],
+  "extensions_not_loaded": [
+    {
+      "namespace": "domain",
+      "tag_key": "topic",
+      "value_type": "text",
+      "policy": "Use a versioned domain vocabulary; inferred assignments are soft retrieval clues until validated. Do not encode sensitive identity in free-form topic labels."
+    },
+    {
+      "namespace": "domain",
+      "tag_key": "activity",
+      "value_type": "enum",
+      "allowed_values": ["decision", "experiment", "meeting", "change", "failure", "review", "unknown"],
+      "policy": "Activity is a source-grounded content annotation, not proof that an event occurred. Occurrence and modality require explicit fields."
+    },
+    {
+      "namespace": "quality",
+      "tag_key": "time_resolution",
+      "value_type": "enum",
+      "allowed_values": ["explicit", "anchored_relative", "ambiguous", "unknown"],
+      "policy": "Keep raw time text, anchor and timezone separately. Never use import time as the unknown event time."
+    }
+  ],
+  "first_class_fields_not_tags": [
+    "authenticated_principal",
+    "scope_id",
+    "scope_grants",
+    "entity_id",
+    "source_id",
+    "valid_time",
+    "recorded_time",
+    "polarity",
+    "modality",
+    "epistemic_mode",
+    "claim_version",
+    "retention_policy"
+  ],
+  "invariants": [
+    "A content label is not an authorization grant.",
+    "Missing annotations mean unknown or unprocessed, not false.",
+    "Extraction confidence is neither truth probability nor retrieval relevance.",
+    "The same text copied through several agents is one source lineage, not independent corroboration.",
+    "Changing the meaning of a vocabulary key requires a new key or version."
+  ]
+}

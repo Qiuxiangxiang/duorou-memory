@@ -1,0 +1,14 @@
+{
+  "questions": 31,
+  "official_evaluator_commit": "ef4e5dff1a47ec71213a06e359f02753defa8fb1",
+  "dataset_revision": "78e826dc07e97466b2f54443831ef9a83ab8b27c",
+  "prediction_sha256": "6d87941b57434929d363cd5c90da0578ea191ebaa67e73f09824739236dfb33b",
+  "judge": "gpt-5-mini-2025-08-07",
+  "reasoning_effort": "minimal",
+  "fallback_count": 0,
+  "judge_usage": {
+    "input_tokens": 7775,
+    "output_tokens": 1193,
+    "total_tokens": 8968
+  }
+}

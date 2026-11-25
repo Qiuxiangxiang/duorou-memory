@@ -1,0 +1,78 @@
+{
+  "kind": "synthetic closed-loop in-process test (not saturation or MCP)",
+  "documents": 5000,
+  "ingest_seconds": 0.334386319000032,
+  "cold_first_search_ms": 213.74435699999594,
+  "db_bytes_after_close": 3432448,
+  "runs": [
+    {
+      "concurrency": 1,
+      "repeat": 1,
+      "requests": 1000,
+      "qps": 4884.05104097101,
+      "hit_rate": 1,
+      "p50_ms": 0.1784429999815984,
+      "p95_ms": 0.21685699994122842,
+      "p99_ms": 0.28767800006335165
+    },
+    {
+      "concurrency": 1,
+      "repeat": 2,
+      "requests": 1000,
+      "qps": 5515.964110270381,
+      "hit_rate": 1,
+      "p50_ms": 0.13594200004263257,
+      "p95_ms": 0.22885400005634438,
+      "p99_ms": 0.43068899992704246
+    },
+    {
+      "concurrency": 1,
+      "repeat": 3,
+      "requests": 1000,
+      "qps": 7209.737864169042,
+      "hit_rate": 1,
+      "p50_ms": 0.12075099994035554,
+      "p95_ms": 0.1513540000814828,
+      "p99_ms": 0.18934800004899444
+    },
+    {
+      "concurrency": 8,
+      "repeat": 1,
+      "requests": 1000,
+      "qps": 6156.694486981386,
+      "hit_rate": 1,
+      "p50_ms": 0.12498699993557238,
+      "p95_ms": 7.1176259999674585,
+      "p99_ms": 12.61376700006167
+    },
+    {
+      "concurrency": 8,
+      "repeat": 2,
+      "requests": 1000,
+      "qps": 5985.846286880508,
+      "hit_rate": 1,
+      "p50_ms": 0.13516100000288134,
+      "p95_ms": 7.609592999983761,
+      "p99_ms": 19.04754400004549
+    },
+    {
+      "concurrency": 8,
+      "repeat": 3,
+      "requests": 1000,
+      "qps": 6115.714691564791,
+      "hit_rate": 1,
+      "p50_ms": 0.1280509999332935,
+      "p95_ms": 7.94100600001002,
+      "p99_ms": 14.007259000095473
+    }
+  ],
+  "peak_rss_kib_linux": 131600,
+  "visibility": {
+    "write_ms": 8.376397999995788,
+    "first_query_after_write_ms": 169.4257720000678,
+    "found": true,
+    "delete_ms": 7.424310000033074,
+    "first_query_after_delete_ms": 174.82737800003179,
+    "absent": true
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:duorou:annotation:0.2",
+  "title": "duorou memory annotation input contract v0.2",
+  "description": "Wire shape mapped to tag_annotations; not a registered MCP tool. Authorization, controlled vocabulary semantics and foreign references require a trusted service/database. See docs/ANNOTATION_CONTRACT.zh.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scope_id",
+    "annotation_id",
+    "namespace",
+    "tag_key",
+    "value",
+    "target",
+    "origin",
+    "status",
+    "extractor_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.2"
+    },
+    "scope_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "annotation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "namespace": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "tag_key": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "value": {
+      "type": [
+        "string",
+        "number",
+        "boolean"
+      ]
+    },
+    "target": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "source"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "event"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "entity"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id",
+            "version"
+          ],
+          "properties": {
+            "kind": {
+              "const": "claim"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "intention"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "span"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    },
+    "evidence_span_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin": {
+      "enum": [
+        "metadata",
+        "human",
+        "rule",
+        "model"
+      ]
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "accepted",
+        "rejected"
+      ]
+    },
+    "extractor_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "extraction_confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "origin": {
+            "const": "model"
+          }
+        },
+        "required": [
+          "origin"
+        ]
+      },
+      "then": {
+        "required": [
+          "evidence_span_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "namespace": {
+            "const": "source"
+          },
+          "tag_key": {
+            "const": "kind"
+          }
+        },
+        "required": [
+          "namespace",
+          "tag_key"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "const": "dialogue_turn"
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "source"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "namespace": {
+            "const": "event"
+          },
+          "tag_key": {
+            "const": "boundary_kind"
+          }
+        },
+        "required": [
+          "namespace",
+          "tag_key"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "const": "source_session"
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "event"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "namespace": {
+            "const": "chronology"
+          },
+          "tag_key": {
+            "const": "session_ordinal"
+          }
+        },
+        "required": [
+          "namespace",
+          "tag_key"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "target": {
+            "properties": {
+              "kind": {
+                "const": "event"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

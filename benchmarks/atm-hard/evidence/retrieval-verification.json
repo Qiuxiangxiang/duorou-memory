@@ -1,0 +1,99 @@
+{
+  "questions": 31,
+  "original_sources": 11034,
+  "budget": 32768,
+  "results": {
+    "reference": {
+      "macro_recall_at_10": 0.7704700738856337,
+      "exact_fraction": "1108483/1438710",
+      "total_gold_hits": 139,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    },
+    "versions": {
+      "macro_recall_at_10": 0.7833732996920852,
+      "exact_fraction": "1127047/1438710",
+      "total_gold_hits": 141,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    },
+    "venue": {
+      "macro_recall_at_10": 0.778534590014666,
+      "exact_fraction": "2240171/2877420",
+      "total_gold_hits": 140,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    },
+    "combined": {
+      "macro_recall_at_10": 0.7914378158211175,
+      "exact_fraction": "2277299/2877420",
+      "total_gold_hits": 142,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    },
+    "arrival": {
+      "macro_recall_at_10": 0.7865991061436982,
+      "exact_fraction": "565844/719355",
+      "total_gold_hits": 140,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    },
+    "combined_arrival": {
+      "macro_recall_at_10": 0.807566848079182,
+      "exact_fraction": "2323709/2877420",
+      "total_gold_hits": 143,
+      "total_gold": 194,
+      "max_evidence_bytes": 17606
+    }
+  },
+  "final_changes": [
+    {
+      "id": "a294b202-3353-4fc4-be18-7abd2a36962c",
+      "question": "How many nights have I stayed in Glasgow during my visits, and in which specific years did those stays occur?",
+      "added": [
+        "email202410130002"
+      ],
+      "removed": [
+        "20220623_133208"
+      ],
+      "added_gold": 1,
+      "removed_gold": 0
+    },
+    {
+      "id": "429b218c-086e-4f77-905e-2951ad92f5d8",
+      "question": "Which hotels have I stayed at in Glasgow, and on what dates?",
+      "added": [
+        "email202410130002"
+      ],
+      "removed": [
+        "20241128_104512"
+      ],
+      "added_gold": 1,
+      "removed_gold": 0
+    },
+    {
+      "id": "62e3fe3f-f301-47f1-9773-396920861220",
+      "question": "How many times have I visited Newcastle?",
+      "added": [
+        "20230903_174239"
+      ],
+      "removed": [
+        "20230905_152540"
+      ],
+      "added_gold": 1,
+      "removed_gold": 0
+    },
+    {
+      "id": "b6b46633-47a1-4fd6-88c4-42a7677d7fc5",
+      "question": "Which hotels did I stay at in Greater Cairo during my most recent visit?",
+      "added": [
+        "20240805_193244"
+      ],
+      "removed": [
+        "20240805_193238"
+      ],
+      "added_gold": 1,
+      "removed_gold": 0
+    }
+  ]
+}

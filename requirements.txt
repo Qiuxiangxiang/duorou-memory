@@ -1,0 +1,2 @@
+# Core Python API uses only the standard library. Install MCP to serve.
+mcp>=1.9,<2

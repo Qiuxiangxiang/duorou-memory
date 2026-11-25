@@ -1,0 +1,3 @@
+# Optional offline semantic retrieval and tokenizer
+numpy
+sentence-transformers

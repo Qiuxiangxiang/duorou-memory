@@ -1,0 +1,4 @@
+# Optional reference benchmark dependencies
+numpy
+scipy
+scikit-learn

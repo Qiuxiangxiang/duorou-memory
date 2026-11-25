@@ -1,0 +1,52 @@
+test_consensus_and_determinism (test_fusion.FusionTests.test_consensus_and_determinism) ... ok
+test_duplicate_ids_do_not_vote_twice (test_fusion.FusionTests.test_duplicate_ids_do_not_vote_twice) ... ok
+test_empty (test_fusion.FusionTests.test_empty) ... ok
+test_group_penalty (test_fusion.FusionTests.test_group_penalty) ... ok
+test_all_methods_deny_unauthorized_scope_and_recheck_revocation (test_retriever.RetrieverTests.test_all_methods_deny_unauthorized_scope_and_recheck_revocation) ... ok
+test_context_index_recalls_leaf_without_crossing_session (test_retriever.RetrieverTests.test_context_index_recalls_leaf_without_crossing_session) ... ok
+test_control_rejects_documents_that_do_not_match_source_projection (test_retriever.RetrieverTests.test_control_rejects_documents_that_do_not_match_source_projection) ... ok
+test_current_raw_lookup_is_identical_and_primary_database_is_read_only (test_retriever.RetrieverTests.test_current_raw_lookup_is_identical_and_primary_database_is_read_only) ... ok
+test_enriched_caption_is_retrievable_but_evaluator_fields_are_not (test_retriever.RetrieverTests.test_enriched_caption_is_retrievable_but_evaluator_fields_are_not) ... ok
+test_enriched_projection_exactly_matches_original_converter (test_retriever.RetrieverTests.test_enriched_projection_exactly_matches_original_converter) ... ok
+test_expansion_preserves_top10_and_uses_a_consistent_bounded_prefix (test_retriever.RetrieverTests.test_expansion_preserves_top10_and_uses_a_consistent_bounded_prefix) ... ok
+test_invalid_requests_are_rejected_consistently (test_retriever.RetrieverTests.test_invalid_requests_are_rejected_consistently) ... ok
+test_neighbors_use_membership_and_never_cross_session (test_retriever.RetrieverTests.test_neighbors_use_membership_and_never_cross_session) ... ok
+test_gold_and_caption_never_enter_fts_or_claims (test_schema.ImportAllowlistTests.test_gold_and_caption_never_enter_fts_or_claims) ... ok
+test_actual_negative_hypothetical_are_distinct (test_schema.SchemaTests.test_actual_negative_hypothetical_are_distinct) ... ok
+test_authorization_before_fts_and_scope_filter (test_schema.SchemaTests.test_authorization_before_fts_and_scope_filter) ... ok
+test_claim_object_type_and_intervals (test_schema.SchemaTests.test_claim_object_type_and_intervals) ... ok
+test_completion_requires_same_scope_evidence (test_schema.SchemaTests.test_completion_requires_same_scope_evidence) ... ok
+test_conflict_edges_do_not_overwrite_claims (test_schema.SchemaTests.test_conflict_edges_do_not_overwrite_claims) ... ok
+test_cross_scope_references_rejected (test_schema.SchemaTests.test_cross_scope_references_rejected) ... ok
+test_fts_delete_cascade_and_primary_evidence_removal (test_schema.SchemaTests.test_fts_delete_cascade_and_primary_evidence_removal) ... ok
+test_query_syntax_is_literal (test_schema.SchemaTests.test_query_syntax_is_literal) ... ok
+test_recorded_version_append_and_as_of (test_schema.SchemaTests.test_recorded_version_append_and_as_of) ... ok
+test_same_alias_does_not_merge_entities (test_schema.SchemaTests.test_same_alias_does_not_merge_entities) ... ok
+test_source_immutable_and_nul_rejected (test_schema.SchemaTests.test_source_immutable_and_nul_rejected) ... ok
+test_tag_definition_type_scope_and_evidence (test_schema.SchemaTests.test_tag_definition_type_scope_and_evidence) ... ok
+test_unicode_span_bounds_and_exact_mention (test_schema.SchemaTests.test_unicode_span_bounds_and_exact_mention) ... ok
+test_working_set_cannot_reference_cross_scope_span (test_schema.SchemaTests.test_working_set_cannot_reference_cross_scope_span) ... ok
+test_atomic_batch (test_v1.V1.test_atomic_batch) ... ok
+test_budget_and_empty (test_v1.V1.test_budget_and_empty) ... ok
+test_claim_versions (test_v1.V1.test_claim_versions) ... ok
+test_consolidation (test_v1.V1.test_consolidation) ... ok
+test_derived_event_removal (test_v1.V1.test_derived_event_removal) ... ok
+test_event_and_relation (test_v1.V1.test_event_and_relation) ... ok
+test_existing_schema_migration (test_v1.V1.test_existing_schema_migration) ... ok
+test_external_comparison_contract (test_v1.V1.test_external_comparison_contract) ... ok
+test_idempotence (test_v1.V1.test_idempotence) ... ok
+test_intention_completion (test_v1.V1.test_intention_completion) ... ok
+test_invalidation_other_process (test_v1.V1.test_invalidation_other_process) ... ok
+test_model_extraction_adapter (test_v1.V1.test_model_extraction_adapter) ... ok
+test_scope_and_grants (test_v1.V1.test_scope_and_grants) ... ok
+test_tags_and_context (test_v1.V1.test_tags_and_context) ... ok
+test_threaded (test_v1.V1.test_threaded) ... ok
+test_tool_registration (test_v1.V1.test_tool_registration) ... ok
+test_update_and_delete (test_v1.V1.test_update_and_delete) ... ok
+test_vector_adapter (test_v1.V1.test_vector_adapter) ... ok
+test_working_set (test_v1.V1.test_working_set) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 1.468s
+
+OK

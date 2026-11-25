@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.2",
+  "scope_id": "locomo:conv-26",
+  "annotation_id": "session_1:ordinal",
+  "namespace": "chronology",
+  "tag_key": "session_ordinal",
+  "value": 1,
+  "target": {"kind": "event", "id": "session_1"},
+  "origin": "metadata",
+  "status": "accepted",
+  "extractor_version": "locomo-raw-import/0.2",
+  "extraction_confidence": null
+}

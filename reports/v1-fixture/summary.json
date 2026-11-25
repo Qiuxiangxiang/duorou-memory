@@ -1,0 +1,291 @@
+{
+  "dataset_kind": "synthetic fixture",
+  "documents": 768,
+  "queries": 392,
+  "scopes": 8,
+  "documents_projection_sha256": "07c4a5db35de46b2597aecac6a40efc5f484820bb20e5357b0bd803c9874dc62",
+  "top_k": 5,
+  "budget": 4096,
+  "budget_unit": "utf8_evidence_bytes",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "protocol": "in-process, warmed scope index, no MCP transport",
+  "ingest_seconds": 0.08524773399994956,
+  "duorou_index_build_seconds": 0.029316051000137122,
+  "reference_index_build_seconds": 0.014987124000072072,
+  "semantic_encoder_used": false,
+  "results": {
+    "reference_bm25": {
+      "overall": {
+        "queries": 392,
+        "positive_queries": 384,
+        "negative_queries": 8,
+        "errors": 0,
+        "recall": 0.7916666666666666,
+        "all_hit": 0.5833333333333334,
+        "precision": 0.21666666666666667,
+        "empty_correct": 1,
+        "latency_ms": {
+          "p50": 0.19825499998660234,
+          "p95": 0.3485980000732525,
+          "p99": 0.695192999955907
+        },
+        "mean_evidence_cost": 227.07142857142858
+      },
+      "categories": {
+        "single": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 1.0,
+          "all_hit": 1.0,
+          "precision": 0.2,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.19779399997332803,
+            "p95": 0.44246699997074757,
+            "p99": 0.695192999955907
+          },
+          "mean_evidence_cost": 236.21875
+        },
+        "local_context": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 0.5833333333333334,
+          "all_hit": 0.16666666666666666,
+          "precision": 0.23333333333333334,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.2006679999340122,
+            "p95": 0.3473159999884956,
+            "p99": 0.7375559999900361
+          },
+          "mean_evidence_cost": 227.38541666666666
+        },
+        "empty": {
+          "queries": 8,
+          "positive_queries": 0,
+          "negative_queries": 8,
+          "errors": 0,
+          "recall": null,
+          "all_hit": null,
+          "precision": null,
+          "empty_correct": 1,
+          "latency_ms": {
+            "p50": 0.054030999990573036,
+            "p95": 0.12900100000479142,
+            "p99": 0.12900100000479142
+          },
+          "mean_evidence_cost": 0
+        }
+      }
+    },
+    "bm25": {
+      "overall": {
+        "queries": 392,
+        "positive_queries": 384,
+        "negative_queries": 8,
+        "errors": 0,
+        "recall": 0.7916666666666666,
+        "all_hit": 0.5833333333333334,
+        "precision": 0.21666666666666667,
+        "empty_correct": 1,
+        "latency_ms": {
+          "p50": 0.14291200000116078,
+          "p95": 0.2664659999709329,
+          "p99": 0.5844280000246727
+        },
+        "mean_evidence_cost": 224.95408163265307
+      },
+      "categories": {
+        "single": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 1.0,
+          "all_hit": 1.0,
+          "precision": 0.2,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.14228099996671517,
+            "p95": 0.2664659999709329,
+            "p99": 0.5844280000246727
+          },
+          "mean_evidence_cost": 231.89583333333334
+        },
+        "local_context": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 0.5833333333333334,
+          "all_hit": 0.16666666666666666,
+          "precision": 0.23333333333333334,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.14346299997214373,
+            "p95": 0.2720939999107941,
+            "p99": 0.9132769999951051
+          },
+          "mean_evidence_cost": 227.38541666666666
+        },
+        "empty": {
+          "queries": 8,
+          "positive_queries": 0,
+          "negative_queries": 8,
+          "errors": 0,
+          "recall": null,
+          "all_hit": null,
+          "precision": null,
+          "empty_correct": 1,
+          "latency_ms": {
+            "p50": 0.0377059999436824,
+            "p95": 0.04985399993984174,
+            "p99": 0.04985399993984174
+          },
+          "mean_evidence_cost": 0
+        }
+      }
+    },
+    "enriched": {
+      "overall": {
+        "queries": 392,
+        "positive_queries": 384,
+        "negative_queries": 8,
+        "errors": 0,
+        "recall": 0.7916666666666666,
+        "all_hit": 0.5833333333333334,
+        "precision": 0.21666666666666667,
+        "empty_correct": 1,
+        "latency_ms": {
+          "p50": 0.13680300003215962,
+          "p95": 0.25321600003280764,
+          "p99": 0.45308799997201277
+        },
+        "mean_evidence_cost": 224.95408163265307
+      },
+      "categories": {
+        "single": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 1.0,
+          "all_hit": 1.0,
+          "precision": 0.2,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.13349800008199963,
+            "p95": 0.25321600003280764,
+            "p99": 0.45308799997201277
+          },
+          "mean_evidence_cost": 231.89583333333334
+        },
+        "local_context": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 0.5833333333333334,
+          "all_hit": 0.16666666666666666,
+          "precision": 0.23333333333333334,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.13967799998226837,
+            "p95": 0.2556399999775749,
+            "p99": 0.6349530000306913
+          },
+          "mean_evidence_cost": 227.38541666666666
+        },
+        "empty": {
+          "queries": 8,
+          "positive_queries": 0,
+          "negative_queries": 8,
+          "errors": 0,
+          "recall": null,
+          "all_hit": null,
+          "precision": null,
+          "empty_correct": 1,
+          "latency_ms": {
+            "p50": 0.025837999942268652,
+            "p95": 0.033949999988180934,
+            "p99": 0.033949999988180934
+          },
+          "mean_evidence_cost": 0
+        }
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "queries": 392,
+        "positive_queries": 384,
+        "negative_queries": 8,
+        "errors": 0,
+        "recall": 0.8229166666666666,
+        "all_hit": 0.6458333333333334,
+        "precision": 0.22916666666666669,
+        "empty_correct": 1,
+        "latency_ms": {
+          "p50": 0.23233599995364784,
+          "p95": 0.39101099991967203,
+          "p99": 0.7503049999968425
+        },
+        "mean_evidence_cost": 227.04591836734693
+      },
+      "categories": {
+        "single": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 1.0,
+          "all_hit": 1.0,
+          "precision": 0.2,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.22231000002648216,
+            "p95": 0.38713499998266343,
+            "p99": 0.8675889999949504
+          },
+          "mean_evidence_cost": 236.16666666666666
+        },
+        "local_context": {
+          "queries": 192,
+          "positive_queries": 192,
+          "negative_queries": 0,
+          "errors": 0,
+          "recall": 0.6458333333333334,
+          "all_hit": 0.2916666666666667,
+          "precision": 0.25833333333333336,
+          "empty_correct": null,
+          "latency_ms": {
+            "p50": 0.2392350000945953,
+            "p95": 0.39821100006065535,
+            "p99": 0.5275340000707729
+          },
+          "mean_evidence_cost": 227.38541666666666
+        },
+        "empty": {
+          "queries": 8,
+          "positive_queries": 0,
+          "negative_queries": 8,
+          "errors": 0,
+          "recall": null,
+          "all_hit": null,
+          "precision": null,
+          "empty_correct": 1,
+          "latency_ms": {
+            "p50": 0.02583800005595549,
+            "p95": 0.039759000060257677,
+            "p99": 0.039759000060257677
+          },
+          "mean_evidence_cost": 0
+        }
+      }
+    }
+  }
+}

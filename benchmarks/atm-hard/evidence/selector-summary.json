@@ -1,0 +1,97 @@
+{
+  "n": 31,
+  "data_sha256": {
+    "emails.json": "5c82c38e7f18923a9eba3af321663a8a5bd70e94e0d5e59e987141c71219a8af",
+    "image_batch_results.json": "7204e8b4ab1a0fea97f2003058213742d47589e09636941f8d83b2e77c33e0a1",
+    "video_batch_results.json": "88ed14ce32afde1a4d54d5b77a0e7f84305b543186307be6c9bc34119342727a",
+    "atm-bench.json": "ab6eaa9df62fb4162e0f5eecd98768a7e3ae721e32d2db2cf227ff41e3295762",
+    "atm-bench-hard.json": "acd35f2a172a9741d970d2cf21184ff0af8d79a8bf59967fc8aa33d619f6af4a"
+  },
+  "budget": 32768,
+  "new_model_api_tokens": 0,
+  "lodging_emails": 26,
+  "venue_media": 199,
+  "routed": 4,
+  "changed": {
+    "reference": 0,
+    "versions": 2,
+    "venue": 1,
+    "combined": 3,
+    "arrival": 1,
+    "combined_arrival": 4
+  },
+  "metrics": {
+    "reference": {
+      "recall_at_10": 0.7704700738856337,
+      "gold_hits": 139,
+      "all_hit": 15,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6147435897435898
+      }
+    },
+    "versions": {
+      "recall_at_10": 0.7833732996920854,
+      "gold_hits": 141,
+      "all_hit": 17,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6455128205128206
+      }
+    },
+    "venue": {
+      "recall_at_10": 0.778534590014666,
+      "gold_hits": 140,
+      "all_hit": 15,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6339743589743589
+      }
+    },
+    "combined": {
+      "recall_at_10": 0.7914378158211177,
+      "gold_hits": 142,
+      "all_hit": 17,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6647435897435897
+      }
+    },
+    "arrival": {
+      "recall_at_10": 0.7865991061436982,
+      "gold_hits": 140,
+      "all_hit": 16,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8019713261648745,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6532051282051282
+      }
+    },
+    "combined_arrival": {
+      "recall_at_10": 0.8075668480791822,
+      "gold_hits": 143,
+      "all_hit": 18,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8019713261648745,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.7032051282051281
+      }
+    }
+  }
+}
