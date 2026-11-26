@@ -1,0 +1,82 @@
+{
+  "n": 31,
+  "data_sha256": {
+    "emails.json": "5c82c38e7f18923a9eba3af321663a8a5bd70e94e0d5e59e987141c71219a8af",
+    "image_batch_results.json": "7204e8b4ab1a0fea97f2003058213742d47589e09636941f8d83b2e77c33e0a1",
+    "video_batch_results.json": "88ed14ce32afde1a4d54d5b77a0e7f84305b543186307be6c9bc34119342727a",
+    "atm-bench.json": "ab6eaa9df62fb4162e0f5eecd98768a7e3ae721e32d2db2cf227ff41e3295762",
+    "atm-bench-hard.json": "acd35f2a172a9741d970d2cf21184ff0af8d79a8bf59967fc8aa33d619f6af4a"
+  },
+  "videos_with_capture_metadata": 533,
+  "routed_questions": 1,
+  "diagnostics": [
+    {
+      "id": "baec8204-c6ca-4c9a-bd82-7145e2126659",
+      "gold": 6,
+      "days": 6,
+      "hit": {
+        "reference": 2,
+        "day_only": 6,
+        "phase_tight": 5,
+        "phase_broad": 6
+      },
+      "candidate_gold": {
+        "day_only": 6,
+        "phase_tight": 5,
+        "phase_broad": 6
+      }
+    }
+  ],
+  "budget": 32768,
+  "new_model_api_tokens": 0,
+  "metrics": {
+    "reference": {
+      "recall_at_10": 0.7489646975415477,
+      "gold_hits": 135,
+      "all_hit": 14,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8021865797601092,
+        "number": 0.9333333333333333,
+        "open_end": 0.6147435897435898
+      }
+    },
+    "day_only": {
+      "recall_at_10": 0.7704700738856337,
+      "gold_hits": 139,
+      "all_hit": 15,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6147435897435898
+      }
+    },
+    "phase_tight": {
+      "recall_at_10": 0.7650937297996123,
+      "gold_hits": 138,
+      "all_hit": 14,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8438532464267758,
+        "number": 0.9333333333333333,
+        "open_end": 0.6147435897435898
+      }
+    },
+    "phase_broad": {
+      "recall_at_10": 0.7704700738856337,
+      "gold_hits": 139,
+      "all_hit": 15,
+      "zero_hit": 0,
+      "mrr_at_10": 0.8016129032258065,
+      "by_qtype": {
+        "list_recall": 0.8577421353156647,
+        "number": 0.9333333333333333,
+        "open_end": 0.6147435897435898
+      }
+    }
+  }
+}

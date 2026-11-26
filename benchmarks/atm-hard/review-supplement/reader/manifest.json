@@ -1,0 +1,135 @@
+{
+  "stage": "hard-graph-order-qa-combined_arrival",
+  "model": "gpt-6.1-terra",
+  "reasoning_effort": "low",
+  "reader_tokens": 227486,
+  "batches": [
+    {
+      "batch": 1,
+      "request": "batch-01-request.txt",
+      "receipt": "batch-01-saved-receipt.json",
+      "cache_key": "5cab6f25f1684e766f96876a0fea0c407ece84fa568837bd6f319dc0184aa389",
+      "receipt_sha256": "984ec6b38458a12e86bfa80ddc97e685bfdb833377eb4207bb38ef40ca137da3",
+      "question_ids": [
+        "c53f6cbe-01f4-4870-8946-f761dcf1ceba",
+        "20242c87-f8d7-4d10-a8d0-b0d7e525b64b",
+        "de07dd6e-ac2f-4517-a084-e193a3d93601",
+        "778461cd-4755-498f-b77b-43cc791b42c2",
+        "c5eafc63-5b0b-43c8-b192-6381e5a8226e",
+        "580a4fee-8595-4453-8368-f52eec0a3954"
+      ],
+      "usage": {
+        "input_tokens": 39198,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 368,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "batch": 2,
+      "request": "batch-02-request.txt",
+      "receipt": "batch-02-saved-receipt.json",
+      "cache_key": "877d13908c5fabd455fe5fbb7aa9219b473df3da857be55580645e1807f0eb6a",
+      "receipt_sha256": "406a312b7a70dd0b3dcd179465e8627d8580717969aa81c12057f28c19d56e95",
+      "question_ids": [
+        "53ea4267-419b-4769-817c-add406463462",
+        "a294b202-3353-4fc4-be18-7abd2a36962c",
+        "bb50a272-b5c8-4f0e-8fb5-530b16d73cd9",
+        "afa4bf6a-c459-4173-9de9-2aac6183a4a7",
+        "baec8204-c6ca-4c9a-bd82-7145e2126659",
+        "429b218c-086e-4f77-905e-2951ad92f5d8"
+      ],
+      "usage": {
+        "input_tokens": 39586,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 440,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "batch": 3,
+      "request": "batch-03-request.txt",
+      "receipt": "batch-03-saved-receipt.json",
+      "cache_key": "dd59b5941105acb40056c7f7f5f3d91257171e2614ea3b484a2ca8bf55377511",
+      "receipt_sha256": "2204318fdba76e6ab0fbcbdbb3433ccdba180e61e9704d5f5cdec7ca695ad329",
+      "question_ids": [
+        "4028b70f-061e-4627-839e-9252ac387157",
+        "ef912ea0-634f-4c1f-88d5-9e0543708258",
+        "888b4502-9c70-413a-8c06-69e7e97a16b2",
+        "30ad0a48-89ef-46c4-a388-a3c872bd16b8",
+        "62e3fe3f-f301-47f1-9773-396920861220",
+        "92e4edaa-5b26-44a5-80d2-91acf53b3b9c"
+      ],
+      "usage": {
+        "input_tokens": 39394,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 384,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "batch": 4,
+      "request": "batch-04-request.txt",
+      "receipt": "batch-04-saved-receipt.json",
+      "cache_key": "3559883967abf066f7ddc8faa0c02410b7eacaa37ddc0ab31c10f4d098b2a5c9",
+      "receipt_sha256": "46ea9c4747087650ddfec3aed17041a3b18c81aa7eabb2e2a19d6182d94fbede",
+      "question_ids": [
+        "9a051aa3-a6b6-4e10-bb40-785cde684ad8",
+        "b6b46633-47a1-4fd6-88c4-42a7677d7fc5",
+        "7665e37d-29a0-4450-8d03-6539122a6b3f",
+        "e44b102b-d7e2-4a4f-bdc6-464529910081",
+        "2a976a38-20f4-4eaa-870b-03955fc612e8",
+        "6c73ad56-d84c-48b7-a7d4-bbc2ffd80c79"
+      ],
+      "usage": {
+        "input_tokens": 40555,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 368,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "batch": 5,
+      "request": "batch-05-request.txt",
+      "receipt": "batch-05-saved-receipt.json",
+      "cache_key": "046861a47726e51ba3b27fff8812ffe9504762a15e7a43254d0381ebf8bed258",
+      "receipt_sha256": "6ec50142e542f6d190857a7ea5021f3dcceb5c6f5c3759ac1e5c05c6e7f21f57",
+      "question_ids": [
+        "7b24dbf3-dbe0-4382-9e9c-996cf614657e",
+        "716095fa-6f76-4f19-95e4-3c8bf079fbdd",
+        "b8e85e9d-6701-4f66-885e-bdfabf03f7cd",
+        "0f7fcf11-8516-4756-b791-6e76e8065b14",
+        "17b8b612-213a-4ab3-87f9-356b8cf0d7e5",
+        "361fef09-dbcc-4a68-aed2-187f9728b792"
+      ],
+      "usage": {
+        "input_tokens": 41841,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 539,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "batch": 6,
+      "request": "batch-06-request.txt",
+      "receipt": "batch-06-saved-receipt.json",
+      "cache_key": "c67c4226fa5d27c488ad1542603e48eb4b95b713c03627065b7424101a4215ee",
+      "receipt_sha256": "b43f19fd03d44de61cee55566e0cccf38059e87d82a9f78623213681d5f4f7d8",
+      "question_ids": [
+        "30be4a0e-8708-42fe-9a21-c73254c78270"
+      ],
+      "usage": {
+        "input_tokens": 24748,
+        "cached_input_tokens": 20608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 65,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

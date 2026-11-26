@@ -19,6 +19,8 @@ Question types are graded with the ATM evaluator's deterministic number and list
 
 Hard questions and gold-label error analysis informed development. These are in-sample results. At inference the final selector calls use the question and source corpus. Gold IDs are used for measurement. The selector is an experimental harness built on the v1.0.0 core.
 
+[Reviewer supplement](review-supplement/README.md) includes the original reader receipts, verified payloads, upstream model usage inventory and inference-input disclosure.
+
 ## Files
 
 - `evidence/predictions.jsonl` contains the 31 frozen Terra answers in the official evaluator's format.

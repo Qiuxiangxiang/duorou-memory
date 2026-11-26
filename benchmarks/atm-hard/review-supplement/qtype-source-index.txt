@@ -1,0 +1,46 @@
+event-graph-full/benchmark.py:82: out={"id":key,"qtype":q["qtype"]}
+event-graph-full/benchmark.py:141: jobs=[dict(id=q["id"],question=q["question"],format=q["qtype"],
+event-graph-full/benchmark.py:148: key,kind=q["id"],q["qtype"]
+iterative-search/run.py:168: review_prompts.append(dict(id=key,question=q["question"],format=q["qtype"],
+iterative-search/run.py:188: packet={"id":key,"question":q["question"],"format":q["qtype"],
+iterative-search/run.py:190: expense=bool(q["qtype"]=="number" and unified.PAY_REQUEST.search(q["question"]))
+iterative-search/search.py:75: "aggregate":question["qtype"]=="list_recall" or bool(re.search(
+memory-design/memory.py:84: if PAYMENT.search(text) and question["qtype"]=="number":
+memory-design/memory.py:90: if question["qtype"]=="list_recall":
+memory-design/memory.py:192: if question["qtype"]=="list_recall" and attrs:
+p0-full/evaluate.py:185: {"id": q["id"], "question": q["question"], "format": q["qtype"], "evidence": [
+p0-full/evaluate.py:193: key, kind = q["id"], q["qtype"]
+run.py:83: row = dict(split=split, id=question["id"], qtype=question["qtype"],
+run.py:89: for label in ("overall", f"qtype:{row['qtype']}", f"sources:{kinds}",
+selector-answer-trace/run.py:161: requests.append(dict(id=label,question=query,format=q["qtype"],
+selector-answer-trace/run.py:172: claims[qid].extend(accepted(result,shown,q_by_id[qid]["qtype"]=="list_recall"))
+selector-answer-trace/run.py:184: drafts.append(dict(id=qid,question=query,format=q["qtype"],
+selector-corpus/run.py:78: for group in ("overall", question["qtype"]):
+selector-effort/run.py:123: request=dict(id=key,question=query,format=q["qtype"],
+selector-geography/build.py:79: if question["qtype"]!="open_end" or not GEO_REQUEST.search(text):
+selector-lanes/run.py:131: if not (q["qtype"] == "open_end" or (q["qtype"] == "number" and TEMPORAL.search(query))):
+selector-lodging/verify.py:64: by_type[q["qtype"]].append(recall)
+selector-matching/run.py:196: enumerated = question["qtype"] == "open_end" and not (
+selector-media/run.py:66: if q["qtype"] != "list_recall":
+selector-media/run.py:228: media_ids = list(dict.fromkeys(key for q in qs if q["qtype"] == "list_recall"
+selector-media/run.py:272: if q["qtype"] != "list_recall":
+selector-panels/run.py:149: panel_input.append(dict(id=ident,question=q["question"],format=q["qtype"],
+selector-panels/run.py:172: finals.append(dict(id=key,question=q["question"],format=q["qtype"],
+selector-propagation/run.py:175: scope=readable_category(query,q["qtype"])
+selector-recheck/run.py:158: requests.append(dict(id=row_id,question=query,format=q["qtype"],
+selector-recheck/run.py:176: parsed=accept(row,doc,displayed[doc],by_question[key]["qtype"]=="list_recall")
+selector-recheck/run.py:185: threshold = 2 if args.include_partial and q["qtype"] != "list_recall" else 3
+selector-recheck/run.py:198: compare.append(dict(id=key,question=q["question"],format=q["qtype"],
+selector-set/run.py:175: pending.append(dict(id=key,question=q["question"],format=q["qtype"],
+selector-set/run.py:195: type_data=by_type.setdefault(q["qtype"],{"before":[],"after":[]})
+selector-structure/run.py:167: actual_plan=plan({"question":query,"qtype":q["qtype"]})
+selector-structure/run.py:190: control=dict(id=key,question=query,format=q["qtype"],
+selector-structure/run.py:198: requests.append(dict(id=key,question=query,format=q["qtype"],
+selector-trip/paired_qa.py:63: inputs.append(dict(id=key,question=q["question"],format=q["qtype"],evidence=docs))
+selector-trip/paired_qa.py:69: key,kind=q["id"],q["qtype"]
+selector-trip/run.py:166: if q["qtype"] == "list_recall" or not TRAVEL.search(query) or PRECISE_SOURCE.search(query):
+selector-union/run.py:143: jobs.append(dict(id=key,question=query,format=q["qtype"],
+selector-union/run.py:173: bounds.append((len(gold&set(options)),len(gold),q["qtype"]))
+selector-witness/review.py:112: witness.media_records(q["question"], q["qtype"]))
+selector-witness/review.py:123: use_ids = witness.media_records(q["question"], q["qtype"])
+selector-witness/run.py:185: is_id_query[qid] = media_records(query, q["qtype"])
